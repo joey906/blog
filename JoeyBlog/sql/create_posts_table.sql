@@ -1,0 +1,10 @@
+create table posts (
+id int NOT NULL AUTO_INCREMENT,
+title VARCHAR(150) NOT NULL,
+description VARCHAR(150) NOT NULL,
+body TEXT,
+published boolean DEFAULT NULL,
+created timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+modified timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+PRIMARY KEY (`id`)
+)
